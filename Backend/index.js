@@ -6,7 +6,7 @@ app.use(cors());
 app.use(urlencoded({extended:true}))
 var email="dhina@gmail.com";
 var pass="@123"
-app.post("/login",(req,res)=>{
+app.post("/",(req,res)=>{
     if(req.body.email == email && req.body.password == pass)
         res.send(true)
     else
