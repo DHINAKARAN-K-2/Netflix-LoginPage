@@ -22,7 +22,7 @@ function App() {
   };
   function check()
   {
-    var Logindetails=axios.post("http://localhost:5000/login",{"email":email,"password":password})
+    var Logindetails=axios.post("https://netflix-server-peach.vercel.app/",{"email":email,"password":password})
     Logindetails.then((data)=>{
       if(data.data==true)
       {
